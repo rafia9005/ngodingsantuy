@@ -31,7 +31,6 @@ export default function NavbarLayout() {
               <motion.span
                 animate={{ y: 0 }}
                 initial={{ y: -20 }}
-                transition={{ duration: 1.2 }}
                 className="text-2xl"
               >
                 ngodingsantuy
@@ -40,7 +39,6 @@ export default function NavbarLayout() {
             <motion.div
               animate={{ y: 0 }}
               initial={{ y: -20 }}
-              transition={{ duration: 1.1 }}
               className="hidden lg:flex gap-8 "
             >
               <a href="#" className="">
@@ -56,14 +54,12 @@ export default function NavbarLayout() {
               <motion.div
               animate={{ y: 0 }}
               initial={{ y: -20 }}
-              transition={{ duration: 1.1 }}
               >
               <DarkModeComponent />
               </motion.div>
               <motion.div
               animate={{ y: 0 }}
               initial={{ y: -20 }}
-              transition={{ duration: 1.2 }}
                className="hidden md:flex">
                 <button className="rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
                   Login
@@ -73,7 +69,6 @@ export default function NavbarLayout() {
             <motion.div
             animate={{ y: 0 }}
             initial={{ y: -20 }}
-            transition={{ duration: 1.2 }}
              className="lg:hidden flex items-center">
               <button onClick={() => setToggleMenu(!toggleMenu)}>
                 <Bars3Icon className="h-6" />
