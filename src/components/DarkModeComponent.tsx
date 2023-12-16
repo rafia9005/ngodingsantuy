@@ -16,9 +16,6 @@ export const DarkModeComponent = () => {
       <motion.div whileTap={{ rotate: 25 }}>
         <MoonIcon className="h-6 w-6" onClick={() => setTheme("dark")} />
       </motion.div>
-      <motion.div whileTap={{ rotate: 360 }}>
-        <SunIcon className="h-6 w-6" onClick={() => setTheme("light")} />
-      </motion.div>
     </div>
   );
 };
