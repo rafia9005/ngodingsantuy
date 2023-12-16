@@ -21,59 +21,37 @@ export default function NavbarLayout() {
         <div className="flex mx-auto justify-between w-5/6 ">
           <div className="flex items-center gap-16 my-5">
             <div className="flex items-center">
-              <motion.div
-                animate={{ x: 0 }}
-                initial={{ x: -60 }}
-                transition={{ duration: 2 }}
-              >
+              <div>
                 <PaperAirplaneIcon className="h-6 w-6" />
-              </motion.div>
-              <motion.span
-                animate={{ y: 0 }}
-                initial={{ y: -20 }}
-                className="text-2xl"
-              >
-                ngodingsantuy
-              </motion.span>
+              </div>
+              <span className="text-2xl">ngodingsantuy</span>
             </div>
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ y: -20 }}
-              className="hidden lg:flex gap-8 "
-            >
+            <div className="hidden lg:flex gap-8 ">
               <a href="#" className="">
                 Home
               </a>
               <a href="#">Docs</a>
               <a href="#">Learning</a>
               <a href="#">Contact Us</a>
-            </motion.div>
+            </div>
           </div>
           <div className="flex gap-6">
             <div className="flex items-center gap-10">
-              <motion.div
-              animate={{ y: 0 }}
-              initial={{ y: -20 }}
-              >
               <DarkModeComponent />
-              </motion.div>
-              <motion.div
-              animate={{ y: 0 }}
-              initial={{ y: -20 }}
-               className="hidden md:flex">
+
+              <div className="hidden md:flex">
                 <button className="rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
                   Login
                 </button>
-              </motion.div>
+              </div>
             </div>
-            <motion.div
-            animate={{ y: 0 }}
-            initial={{ y: -20 }}
-             className="lg:hidden flex items-center">
+            <div
+              className="lg:hidden flex items-center"
+            >
               <button onClick={() => setToggleMenu(!toggleMenu)}>
                 <Bars3Icon className="h-6" />
               </button>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
