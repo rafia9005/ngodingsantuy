@@ -4,10 +4,10 @@ import LoaderComponent from "@/components/LoaderComponent";
 import AboutLayout from "@/layouts/AboutLayout";
 export default function Home() {
   return (
-    <main>
+    <LoaderComponent>
       <NavbarLayout />
       <HeroLayout />
       <AboutLayout/>
-    </main>
+    </LoaderComponent>
   );
 }
